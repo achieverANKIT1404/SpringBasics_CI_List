@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 	xmlns="http://www.springframework.org/schema/beans"  
+			    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+			    xmlns:p="http://www.springframework.org/schema/p"  
+			    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+		        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean id="jb" class="MyPack.Jobs">
+        <constructor-arg value="21" type="int"></constructor-arg>
+        <constructor-arg value="Developer Jobs"></constructor-arg>
+        <constructor-arg>
+            <list>
+                <value>Java Developer</value>
+                <value>UI/UX Developer</value>
+                <value>Web Developer</value>
+                <value>C# Developer</value>                
+            </list>
+        </constructor-arg>
+    </bean>
+    
+</beans>
